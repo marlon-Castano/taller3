@@ -4,7 +4,7 @@ function Nutural(){
    $num = $_REQUEST['nat']; 
    if($num<0)
             {
-             echo "El numero".$num."no es natural";
+             echo "<h1> El numero ".$num." no es natural</h1> ";
             }
       for( $i=0; $i<=$num;$i++)
                               {
@@ -39,7 +39,7 @@ function Nutural(){
    <div class="container pt-4" >
    <form class="form-inline" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
    <label for ="example"> <h5> Ingrese un número  <h5> </label>
-   <input type ="number" class ="form-control" name= "nat" id="example" phaceholder="Ingrese un numero natural"required> 
+   <input type ="number" class ="form-control" name= "nat" id="example" placeholder="Ingrese un numero natural" required> 
    <input type ="submit"  name ="btn" class="btn btn-outline-success"  value="Enviar"> 
     </form> 
    </div>

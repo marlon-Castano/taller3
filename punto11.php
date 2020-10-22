@@ -24,7 +24,7 @@
             $contador++;
         }
         echo "
-            <th scope='row'> ".$acumulador."</th>
+            <th scope='row' colspan ='6'> ".$acumulador."</th>
             </tr>";
     }
 ?>
