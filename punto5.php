@@ -13,7 +13,7 @@
     <div class="container ">
         <table class="table table-bordered table-dark">
             <tbody>
-                <th  scope="col" class="text-center" colspan="5">Numero impares</th>
+                <th  scope="col" class="text-center" colspan="5"><h4> Números impares</h4></th>
             </tbody>
             <tr>
                 <?php
@@ -31,7 +31,7 @@
             </tr>
 
         </table>
-        <p>la cantida de numeros impares son <?php echo $coo; ?></p>
+        <p > <h5 align="center"> La cantidad de numeros impares son: <?php echo $coo; ?></h5></p>
     </div>
  
 

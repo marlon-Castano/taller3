@@ -16,7 +16,7 @@
           <?php
             # Hacer un programa que imprima los números pares entre el 0 y 100
              $num = 0; 
-            for ($i=1; $i<=100;$i++){
+            for ($i=0; $i<=100;$i++){
                    if($num%10==0){
                         echo "</tr><tr>"; 
                    }
@@ -26,9 +26,12 @@
                                            $ss = "bg-primary text-white"; 
                                           }else{
                                             $ss = "bg-secondary text-white"; 
+                                          } if($i==100){
+                                              echo "<td colspan ='5' class='".$ss."'><h4 align='center'>".$i."</h4></td>";
                                           }
-                            
+                                            if($i<100){
                                             echo "<td class='".$ss."'><h4 align='center'>".$i."</h4></td>";     
+                                            }
                                           }
                                          
                                           $num++; 
