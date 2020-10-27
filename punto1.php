@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
 <body>
     <div class="container pt-3"><h3 align="center">Tabla de los numeros del 1 al 100</h3></div>
     <div class="container pt-3">
     <table class="table table-bordered">
-        <tbody>
+    <tbody>
         <tr>
-    <?php
+         <?php
         $coo=0;
         for($i=1;$i<=100;$i++){
             if($coo%5==0){
@@ -24,7 +23,7 @@
             echo "<td class='".$cla."'><h3 align='center' >".$i."</h3></td>";
             $coo++;
         }
-    ?>
+     ?>
     </tbody>
     </table>
     </div>
