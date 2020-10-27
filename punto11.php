@@ -4,8 +4,10 @@
         $cos2=($numero*2)-1;
         $acumulador=1;
         $contador=0;
+        $es= "text-primary"; 
+        $ss = "bg-dark text-white"; 
         echo "<tbody>
-                <th   class='text-center' colspan='".$cos2."' scope='col'>Factorial</th>
+                <th   class='".$ss."'colspan='".$cos2."' scope='col'><h3 align='center'>FACTORIAL</h3></th>
             </tbody>
             <tr>";
         for($i=2; $i<=$numero; $i++){
@@ -13,18 +15,18 @@
                 $contador=0;
                 echo "</tr> <tr>";
             }
-            echo " <td>".$i."</td>";
+            echo " <td class='".$ss."'><h4>".$i."</h4></td>";
             if($i<$numero){
-                echo " <td> * </td>";
+                echo " <td class='".$es."'><h4> *</4> </td>";
             }
             if($i==$numero){
-                echo " <td> = </td>";
+                echo " <td class='".$es."'><h4> =</4> </td>";
             }
             $acumulador=$i * $acumulador;
             $contador++;
         }
         echo "
-            <th scope='row' colspan ='6'> ".$acumulador."</th>
+            <th scope='row' colspan ='5' class='".$ss."'><h4>".$acumulador."</h4></th>
             </tr>";
     }
 ?>
@@ -41,11 +43,15 @@
 
 <body>
     <div class="container" >
+        <table class ="table border-bordered" > 
+            <tr align="center">
         <form class="form-inline" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
-            <label for="">ingrese el numero</label>
-            <input type="number" name="num1" class="form-control" id="inputCity" >
-            <input type="submit" value="aceptar" name="boton" class="btn btn-primary mb-2">
+          <td> <h3> <b><label for="">Ingrese un numero</label></b> </h3></td>
+         <td colspan="3">  <input type="number" name="num1" class="form-control" id="inputCity" > </td>
+          <td>  <input type="submit"  value="Aceptar" name="boton" class="btn btn-primary mb-2">   </td>   
         </form>
+            </tr>
+        </table>
     </div>
     <br>
     <div class="container ">
